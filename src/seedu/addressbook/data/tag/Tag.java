@@ -1,5 +1,7 @@
 package seedu.addressbook.data.tag;
 
+import java.util.Set;
+
 import seedu.addressbook.data.exception.IllegalValueException;
 
 /**
@@ -12,6 +14,7 @@ public class Tag {
     public static final String TAG_VALIDATION_REGEX = "\\p{Alnum}+";
 
     public final String tagName;
+    public Set<Tagging> taggings;
 
     /**
      * Validates given tag name.

@@ -1,8 +1,10 @@
 package seedu.addressbook.data.person;
 
+import seedu.addressbook.data.tag.Tagging;
 import seedu.addressbook.data.tag.UniqueTagList;
 
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * Represents a Person in the address book.
@@ -16,6 +18,7 @@ public class Person implements ReadOnlyPerson {
     private Address address;
 
     private final UniqueTagList tags;
+    public Set<Tagging> taggings;
     /**
      * Assumption: Every field must be present and not null.
      */
